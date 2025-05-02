@@ -252,7 +252,7 @@ export class GeneratedDesignRoutingModule {}
     archive.on("error", err => { throw err; });
 
     archive.pipe(output);
-    archive.directory(tempDir, false);
+    archive.directory(tempDir, "generated-design");
     archive.finalize();
 
   } catch (err) {
